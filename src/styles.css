@@ -29,18 +29,77 @@ body {
 }
 
 .site-header {
-  padding: 1.75rem 2rem;
+  padding: 1.25rem 2rem;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.site-title {
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   color: var(--text);
   text-decoration: none;
+}
+
+.site-logo__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.site-logo__text {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 500;
   font-size: 1.4rem;
   letter-spacing: 0.01em;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link--active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .site-nav {
+    gap: 1.1rem;
+  }
 }
 
 main {
@@ -198,4 +257,65 @@ main {
 .empty-state code {
   background: var(--bg-elevated);
   padding: 0.1rem 0.4rem;
+}
+
+/* ---------- Páginas estáticas (Sobre mí, Contacto, Dossieres) ---------- */
+
+.static-page {
+  max-width: 60ch;
+}
+
+.static-page h1 {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+
+.static-page__lead {
+  color: var(--text-dim);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.static-page__body p {
+  line-height: 1.6;
+  margin-bottom: 1.1rem;
+}
+
+.static-page__body a {
+  color: var(--accent);
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.9rem;
+}
+
+.contact-list__label {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  min-width: 6.5rem;
+}
+
+.contact-list a {
+  color: var(--text);
+}
+
+.contact-list a:hover {
+  color: var(--accent);
 }
