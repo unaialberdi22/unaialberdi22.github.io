@@ -1,0 +1,46 @@
+{
+  "generadoEn": "2026-08-28T10:22:46.268Z",
+  "categorias": [
+    {
+      "type": "categoria",
+      "slug": "automocion",
+      "titulo": "Automoción",
+      "descripcion": "Fotografías de eventos de motor: rallies, exposiciones y encuentros.",
+      "ruta": "automocion",
+      "items": [
+        {
+          "type": "galeria",
+          "slug": "motorshow-madrid-2025",
+          "titulo": "Motorshow Madrid 2025",
+          "descripcion": "Salón del automóvil, edición 2025. Novedades y clásicos restaurados.",
+          "ruta": "automocion/motorshow-madrid-2025",
+          "fotos": [
+            "automocion/motorshow-madrid-2025/foto1.jpg"
+          ]
+        },
+        {
+          "type": "galeria",
+          "slug": "rally-catalunya-2024",
+          "titulo": "Rally Cataluña 2024",
+          "descripcion": "Tramo de asfalto disputado en octubre de 2024. Coches de época y clase moderna.",
+          "ruta": "automocion/rally-catalunya-2024",
+          "fotos": [
+            "automocion/rally-catalunya-2024/foto1.jpg",
+            "automocion/rally-catalunya-2024/foto2.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "galeria",
+      "slug": "paisajes",
+      "titulo": "Paisajes",
+      "descripcion": "Naturaleza y paisajes urbanos capturados en distintos viajes.",
+      "ruta": "paisajes",
+      "fotos": [
+        "paisajes/foto1.jpg",
+        "paisajes/foto2.jpg"
+      ]
+    }
+  ]
+}
